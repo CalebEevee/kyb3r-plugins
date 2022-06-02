@@ -45,7 +45,7 @@ class AutoDelete(commands.Cog):
         logchannel = self.bot.get_channel(683072494013644817)
 
         for channel_id in channels:
-            channel = bot.get_channel(channel_id)
+            channel = self.bot.get_channel(channel_id)
             deleted = await channel.purge(limit=100, check=check)
 
         embed = discord.Embed(
