@@ -48,7 +48,7 @@ class AutoDelete(commands.Cog):
             channel = await self.bot.get_channel(channel_id)
             deleted = await channel.purge(limit=100, check=check)
 
-        embed = disnake.Embed(
+        embed = discord.Embed(
             title="AutoDelete - Member Left",
             description=f"{member.name} `[ {member.id} ]` left. {len(deleted)} message(s) deleted!",
             color=0x56C9F0,
