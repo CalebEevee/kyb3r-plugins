@@ -56,5 +56,5 @@ class AutoDelete(commands.Cog):
 
         await logchannel.send(embed=embed)
         
-        def setup(bot):
-            bot.add_cog(AutoDelete(bot))
+    def setup(bot):
+        bot.add_cog(AutoDelete(bot))
